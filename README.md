@@ -47,7 +47,7 @@ flowchart TB
 
   subgraph Storage["持久化存储"]
     vector["向量存储语义检索"]
-    graph["图存储关系建模"]
+    graphdb["图存储关系建模"]
     history["历史DB审计追踪"]
   end
 
@@ -55,7 +55,7 @@ flowchart TB
   create --> mem0
   mem0 --> l1
   l2 --> vector
-  l2 --> graph
+  l2 --> graphdb
   mem0 --> history
 ```
 
